@@ -1,0 +1,83 @@
+.card {
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .2);
+    border-radius: .2rem;
+    line-height: 1.1rem;
+    color: var(--primaryGrey);
+    width: 28rem;
+    border: 1px solid var(--primaryBlue);
+    font-family: var(--fontFamily);
+    padding-left: 1rem;
+}
+
+.action{
+    padding-top: 1.1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.title {
+    font-family: var(--fontFamily);
+    color: var(--primaryBlue)
+}
+
+.content{
+     font-family: var(--fontFamily);
+    color: var(--primaryBlue);
+    line-height: 1.8rem;
+    
+
+}
+
+.red{
+   
+    color: var(--secondaryRed);
+    border-top : 3px solid var(--secondaryRed)
+}
+
+.orange{
+    
+    color: var(--warningColor);
+    border-color: 3px solid var(--warningColor);
+}
+
+.blue {
+   
+    color: var(--primaryBlue);
+    border-color: 3px solid var(--primaryBlue);
+
+}
+
+
+
+p{
+    font-family: var(--fontFamily);
+}
+
+.actionGroup {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+}
+
+
+
+.button {
+    font-family: var(--fontFamily);
+    text-align: left;
+    color: var(--primaryBlue);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 5rem;
+
+}
+
+.ml{
+    margin-left: 2rem;
+}
+
+.disabled {
+    cursor: not-allowed;
+}

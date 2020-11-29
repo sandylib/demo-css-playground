@@ -3,7 +3,9 @@ import Input from '../../components/Input/Input';
 import  { getUserProfile }  from '../../utils/defaultUser';
 import { useForm } from "react-hook-form";
 import { CURRENT_USER } from '../../constants/applicationConstants'
-
+import AppWrapper from '../../components/AppWrapper/AppWrapper'
+import styles from './MyProfile.module.css';
+import Card from '../../components/Card/Card'
 
 const MyProfile = () => {
     const [fields, setFields] = React.useState();
@@ -48,23 +50,13 @@ const MyProfile = () => {
     if(fetching) return <div>Loading...</div>
 
     return (
-         <form onSubmit={handleSubmit(onSubmit)}>
-            {
-                fields.map( (field) => (
-                    <Input 
-                        key = {field.id} 
-                        name={field.name}
-                        value={field.value}   
-                        disabled={field.permissions.find(p=> p !== 'writable')} 
-                        ref={register({...field.validationRules})} 
-                        error={errors[field.name]}
-                        onChange={onHandleChange}
-                        {...field}
-                        />
-                ))
-            }
-             <input type="submit" />
-        </form>
+        <AppWrapper size={'lg'}>
+            <div className={styles.container}>
+                <Card />
+                <Card />
+                <Card />
+            </div>
+        </AppWrapper>
     )
 }
 

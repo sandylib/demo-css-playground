@@ -11,7 +11,6 @@ export const PermissionDenied = () => {
      
          you do not have permission to access this page
        
-       <a href={'#'}   onClick={()=> history.push('/')}  > Home</a>
     </div>
   )
 }

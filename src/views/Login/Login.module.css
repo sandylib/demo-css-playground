@@ -1,0 +1,36 @@
+.container {
+    width: 800px;
+    border: .1rem solid var(--primaryGrey);
+    margin: 5rem auto;
+    padding: 5rem;
+    background-color: white;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.left {
+    width: 40rem;
+    margin-right: auto;
+}
+
+.right {
+   width: 5rem;
+}
+
+.loginButton {
+    width: 45rem;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+    
+}
+

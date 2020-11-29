@@ -1,0 +1,34 @@
+:root {
+    --primaryBlue: #002664;
+    --primaryRed:  #a3031e;
+    --secondaryRed: #d7153a;
+    --secondaryBlue: #2e5299;
+    --primaryGrey: #242934;
+    --secondaryGrey: #646974;
+    --thirdGrey: #dee3e5;
+    --mysticGrey: #ecf1f3;
+    --iceBlue: #f4f7f9;
+    --warningColor: rgb(255, 102, 0);
+    
+    --fontFamily: Tahoma;
+
+    
+  --headingSmall: 3rem;
+  --headingMedium: 4rem;
+  --headingLarge: 6rem;
+
+  --bodyCopySmall: 1.6rem;
+  --bodyCopyMedium: 1.7rem;
+  --bodyCopyLarge: 1.8rem;
+
+  --lineHeightSmall: 2.8rem;
+  --lineHeightMedium: 3rem;
+  --lineHeightLarge: 3.2rem;
+
+  --fontWeightBlack: 800;
+  --fontWeightBold: 700;
+  --fontWeightSemiBold: 600;
+  --fontWeightRegular: 400;
+  --fontWeightLight: 300;
+  --fontWeightExtraLight: 200;
+}
