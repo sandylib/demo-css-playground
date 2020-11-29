@@ -21,7 +21,10 @@ const AppBar = ({logout, isAuthenticated}) => {
     return (
         <div className={styles.container}>
             <a className={styles.active} href="#"><img  src={Logo} alt="revenue logo"/></a> 
-            <a href="#">Viewing Adion Pty Ltd</a> 
+            <a href="#">
+            <Guard allowed={[APP_USER_ROLES.BUSINESS]}>
+                Viewing Adion Pty Ltd </Guard>
+            </a> 
             <a href="#" className={styles.searchWrap}>
                 <Guard allowed={[APP_USER_ROLES.BUSINESS]}>
                      <i className="fa fa-search"></i>
