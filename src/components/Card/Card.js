@@ -2,23 +2,25 @@ import React from 'react'
 import styles from './Card.module.css'
 import cn from 'classnames'
 
-const CardView = ({theme ='red', 
-     actionText = 'Do it now',
+const CardView = ({
+    theme ='red', 
+    actionText = 'Do it now',
     title = 'Overdue payments',
     content ='You have two overdue payments,Would you like to pay those now?',
-    actionOneStatus = true,
+    actionOneStatus = 'disabled',
     actionOneText = 'Yes',
     actionOneOnClick,
     actionTwoStatus,
     actionTwoText = 'No',
-    actionTwoOnClick
+    actionTwoOnClick,
+    expired
 }) => {
     return (
         <div className={cn(styles.card,  {
             [styles.red] : theme === 'red',
             [styles.orange] : theme === 'orange',
-            [styles.blue] : theme === 'blue'
-            
+            [styles.blue] : theme === 'blue',
+            [styles.expired] : expired
             })}>
             <div className={cn(styles.action )}>{actionText}</div>
             <div className={styles.title}><h3>{title}</h3></div>

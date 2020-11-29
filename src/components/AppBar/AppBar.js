@@ -21,11 +21,12 @@ const AppBar = ({logout, isAuthenticated}) => {
     return (
         <div className={styles.container}>
             <a className={styles.active} href="#"><img  src={Logo} alt="revenue logo"/></a> 
-            <a href="#"></a> 
+            <a href="#">Viewing Adion Pty Ltd</a> 
             <a href="#" className={styles.searchWrap}>
                 <Guard allowed={[APP_USER_ROLES.BUSINESS]}>
-                    <input value={value} className={styles.searchInput} id="search" onChange={onChange} />
-                    <i className="fa fa-search"></i>
+                     <i className="fa fa-search"></i>
+                    <input disabled value={'Find or ask'} className={styles.searchInput} id="search" onChange={onChange} />
+                    
                 </Guard>
             </a> 
             <a href="#"></a>

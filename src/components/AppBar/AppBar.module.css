@@ -6,14 +6,34 @@
   
   .container a {
     float: left;
-    width: 20%;
     text-align: center;
-    padding: 12px 0;
+    padding: 15px 0;
     transition: all 0.3s ease;
     color: var(--primaryGrey);
-    font-size: 36px;
+  }
+
+  .container a:first-child{
+    width: 10%;
+  }
+
+  .container a:last-child{
+    width: 15%;
+    font-size: 30px;
+    padding-top: 15px;
+
+  }
+
+  .container a:nth-child(2) {
+    width: 50%;
+    font-size: 20px;
+    text-align: right;
+    padding-right: 15px;
   }
   
+  .container a:nth-child(3) {
+    width: 25%;
+    font-size: 30px;
+  }
   
   .active {
    
@@ -28,5 +48,12 @@
   }
 
   .searchInput {
-    margin-right: 5px;
+    margin-left: 5px;
+    outline:none;
+    font-size:x-large;
+    /* font-weight: bold; */
+  }
+  input.searchInput{
+    outline:none;
+    border: 0;
   }
